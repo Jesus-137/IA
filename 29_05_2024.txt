@@ -1,0 +1,31 @@
+Un dataset es un conjunto de obsevaciones.
+Cuando se habla de un conjunto no hay datos repetidos.
+componentes de un dataset: características y etiquetas
+el vector x se obtiene de esta forma x^(m*n) y el de w es w^(n*1) o w^(1*n) el vector Yd es Yd^(m*1) el del error o resultado es de R^(m*1)
+lo unico que hace la neurona artificial es obtener las entradas hacer la sumadoria de (xi*wi) 
+donde i hace referncia a las posiciones de x y w
+la unica condicion para la convinacion de dos vectores el numero de filas tiene que ser igual al numero de columnas
+u=XW
+Yc=FA(u)
+error=Yc-Yd
+DeltaW^(n*1)=X^t * error
+W^(n*1)=W+DeltaW
+python matmun
+n es la tasa de aprendizaje y esta tiene que ser major a 0
+n es edta
+entre mas pequeño mas lento el progreso pero si su valor es muy alto puede que no llegue al resultado
+
+proceso de iteracion
+
+w=vector aleatorio * R^(n*1)
+n>0
+E <---tolerancia permitida
+u = XW<----------------|
+Yc = FA(u)	       |
+error = Yc - Yd        |V
+DeltaW = n*X^t*error   |
+w+=DeltaW	       |     F
+|error|<=E-------------|---------->salida
+
+si se tienen todos los datos la tolerancia es igual a 0
+si no se le puede permitir un margen de error mayor a 0
